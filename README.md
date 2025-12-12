@@ -57,7 +57,7 @@ npx playwright install chromium
 npm run test:cypress
 ```
 
-> ⚠️ **已知問題**：Cypress 目前會遇到 Geetest `60500` 錯誤（極驗封禁），因為 Geetest 會偵測到 Cypress 的自動化特徵。
+> **已知問題**：Cypress 目前會遇到 Geetest `60500` 錯誤（極驗封禁），因為 Geetest 會偵測到 Cypress 的自動化特徵。
 
 ### Playwright 測試 ✅ 推薦
 
@@ -73,24 +73,6 @@ npm run test:playwright:ui
 ```
 
 > **Playwright 運行正常**：已配置反自動化檢測，可成功通過滑塊驗證。
-
----
-
-## 專案結構
-
-```
-├── cypress/                    # Cypress 測試
-│   └── e2e/
-│       ├── slider-verification.cy.js
-│       ├── slider-opencv.cy.js
-│       └── slider-console.cy.js
-├── playwright/                 # Playwright 測試
-│   └── tests/
-│       └── slider-verification.spec.js
-├── cypress.config.js           # Cypress 配置
-├── playwright.config.js        # Playwright 配置
-└── package.json
-```
 
 ---
 
